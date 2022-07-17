@@ -13,6 +13,7 @@ function sum(a, b) { //eslint-disable-line
 }
 
 // Here is the test for sum(); uncomment it to run it
+// eslint-disable-next-line no-undef
 testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -31,6 +32,7 @@ function multiply(a, b) { //eslint-disable-line
 }
 
 // Here is the test for multiply(); uncomment it to run it
+// eslint-disable-next-line no-undef
 testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -48,7 +50,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  // may have to do subtraction to get some stuffs working
+  // same with the products: multiply some stuffs, then multiply some other stuffs, and then use division somewhere
+  // return an array with [sum, product, sum string, multiplication string]
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -97,7 +101,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
