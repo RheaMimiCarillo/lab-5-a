@@ -50,13 +50,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  // may have to do subtraction to get some stuffs working
-  // same with the products: multiply some stuffs, then multiply some other stuffs, and then use division somewhere
-  // return an array with [sum, product, sum string, multiplication string]
+  // adds a and b using the add() function
+  let thing1 = sum(a, b)[0];
+
+  // multiplies a and b using the multiply() function
+  let hop = multiply(a, b)[0];
+
+  // returns [thing1 + c, hop * c, 'a and b and c sum to 16', 'the product of a and b and c is product']
+  return [sum(thing1, c)[0], multiply(hop, c)[0], `${a} and ${b} and ${c} sum to ` + sum(thing1, c)[0] + '.', `The product of ${a} and ${b} and ${c} is ` + multiply(hop, c)[0] + '.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -74,6 +79,12 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+
+  // use a for loop to iterate through the testArray[]
+  // make an arraySum variable
+  // use the sum() function to add index[i] to arraySum
+
+  // return [arraySum, the string];
 
 }
 
