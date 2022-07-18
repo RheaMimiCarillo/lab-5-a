@@ -61,6 +61,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
+// eslint-disable-next-line no-undef
 testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -79,18 +80,30 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  let arraySum = 0; // variable to be sum of all elements in sumArr
+  let arrayNums = ''; // variable to be a string of all elements in an array, separated by a comma
 
-  // use a for loop to iterate through the testArray[]
-  // make an arraySum variable
-  // use the sum() function to add index[i] to arraySum
+  for (let i = 0; i < sumArr.length; i++) // for loop to add each integer in an array using sum()
+  {
+    arraySum = sum(arraySum, sumArr[i])[0];
+    if (i < sumArr.length-1) // all elements in sumArr that aren't the last element get concatenated to arrayNums plus a comma
+    {
+      arrayNums += `${sumArr[i]},`;
+    }
+    else // the last element of sumArry gets concatenated without a comma
+    {
+      arrayNums += `${sumArr[i]}`; 
+    }
+  }
 
   // return [arraySum, the string];
+  return [arraySum, `${arrayNums} was passed in as an array of numbers, and ${arraySum} is their sum.`];
 
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
