@@ -92,7 +92,7 @@ function sumArray(sumArr) { //eslint-disable-line
     }
     else // the last element of sumArry gets concatenated without a comma
     {
-      arrayNums += `${sumArr[i]}`; 
+      arrayNums += `${sumArr[i]}`;
     }
   }
 
@@ -102,6 +102,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
 // Here is the test for sumArray(); uncomment it to run it
 
+// eslint-disable-next-line no-undef
 testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -130,11 +131,12 @@ function multiplyArray(multArr) { //eslint-disable-line
       arrayNums += `${multArr[i]}`;
     }
   }
-
+  // I used a different bracket format to make the function seems shorter than problem 4
   return [arrayProduct, `The numbers ${arrayNums} have a product of ${arrayProduct}.`];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
+// eslint-disable-next-line no-undef
 testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
@@ -164,6 +166,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
+// eslint-disable-next-line no-undef
 testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
